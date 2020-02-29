@@ -1,0 +1,44 @@
+{
+  "name": "js-ipld-blockstore",
+  "version": "1.0.0",
+  "description": "IPLD Blockstore",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "aegir lint",
+    "release": "aegir release",
+    "build": "aegir build",
+    "test": "aegir test",
+    "test:node": "aegir test --target node",
+    "test:browser": "aegir test --target browser",
+    "watch:test:node": "npm-watch"
+  },
+  "watch": {
+    "test": "{src,test}/*.js",
+    "lint": "{src,test}/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chafey/js-ipld-blockstore.git"
+  },
+  "author": "Chris Hafey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chafey/js-ipld-blockstore/issues"
+  },
+  "homepage": "https://github.com/chafey/js-ipld-blockstore#readme",
+  "devDependencies": {
+    "aegir": "^21.3.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "npm-watch": "^0.6.0"
+  },
+  "dependencies": {
+    "cids": "^0.7.3",
+    "err-code": "^2.0.0",
+    "ipld-block": "^0.9.0"
+  }
+}
